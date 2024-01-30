@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head class="head">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,66 +13,75 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="body">
   <div class="container">
-    <ul class="skip-links">
-      <li><a href="#main-nav">Skip to main nav</a></li>
-      <li><a href="#main-content">Skip to main content</a></li>
-    </ul>
-    <div class="site-header">
-      <h1>Jam Box Studios</h1>
-      <div class="main-nav" id="main-nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Reservation</a></li>
-          <li><a href="#">Studio</a></li>
+    <header role="banner">
+      <nav>
+        <ul class="skip-links">
+          <li><a href="#main-nav" aria-label="Go to main navigation">Skip to main nav</a></li>
+          <li><a href="#main-content" aria-label="Go to main content">Skip to main content</a></li>
         </ul>
+      </nav>
+      <div class="site-header">
+        <h1 role="heading">Jam Box Studios</h1>
+        <div class="main-nav" id="main-nav" role="navigation">
+          <ul>
+            <li><a href="#" aria-label="Go to home page">Home</a></li>
+            <li><a href="#" aria-label="Go to products page">Products</a></li>
+            <li><a href="#"aria-label="Go to reservation page">Reservation</a></li>
+            <li><a href="#" aria-label="Go to studio page">Studio</a></li>
+          </ul>
+        </div>
+        <img src="https://placekitten.com/1200/900" class="banner" alt="kittenbanner">
       </div>
-      <img src="https://placekitten.com/1200/900" class="banner" alt="kittenbanner">
-    </div>
-    <div class="main-content" id="main-content">
-      <h1>Welcome to Jam Box</h1>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa
-        eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio
-        quia veritatis.</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam
-        omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto
-        error voluptatibus.</p>
-      <div class="owner">
-        <h1>Meet the owner</h1>
-        <ul>
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
-        </ul>
-        <h1>Address</h1>
-        <p>
-          Jambox Studios
-          123 Guitar Road,
-          Musicville, Danceistan
-          B3T 0L0
-        </p>
+    </header>
+    <main class="main" role="main">
+      <div class="main-content" id="main-content">
+        <div class="welcome">
+          <h1>Welcome to Jam Box</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa
+            eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis
+            optio
+            quia veritatis.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam
+            omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto
+            error voluptatibus.</p>
+        </div>
+        <div class="owner" role="region">
+          <h1>Meet the owner</h1>
+          <ul>
+            <li>Name: John Doe</li>
+            <li>Title: CEO</li>
+            <li>Email: johnjoe@jambox.ca</li>
+            <li>Phone: 613-000-0000</li>
+          </ul>
+          <h1>Address</h1>
+          <p>
+            Jambox Studios
+            123 Guitar Road,
+            Musicville, Danceistan
+            B3T 0L0
+          </p>
+        </div>
+        <div class="contact-section">
+          <h1>Contact Us</h1>
+          <form action="thanks.html">
+            <label for="name">Full Name</label>
+            <input type="text" placeholder="Full Name" id="name">
+            <label for="email">Email</label>
+            <input type="text" placeholder="Email" id="email">
+            <label for="subject">Subject</label>
+            <input type="text" placeholder="Subject" id="subject">
+            <label for="message">Your Message:</label>
+            <textarea id="message" aria-label="Write your message"></textarea>
+            <button type="submit" aria-label="Send Contact Information">Send</button>
+          </form>
+        </div>
       </div>
-      <div class="contact-section">
-        <h1>Contact Us</h1>
-        <form action="thanks.html">
-          <label for="name">Full Name</label>
-          <input type="text" placeholder="Full Name" id="name">
-          <label for="email">Email</label>
-          <input type="text" placeholder="Email" id="email">
-          <label for="subject">Subject</label>
-          <input type="text" placeholder="Subject" id="subject">
-          <label for="message">Your Message:</label>
-          <textarea id="message" aria-label="Write your message"></textarea>
-          <button type="submit" aria-label="Send Contact Information">Send</button>
-        </form>
-      </div>
-    </div>
-    <div class="site-footer">
+    </main>
+    <footer class="sitefooter" role="contentinfo">
       &copy; 2021 Jam Box Studios
-    </div>
+    </footer>
   </div>
 </body>
 
