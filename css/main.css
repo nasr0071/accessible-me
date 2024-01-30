@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: rgb(187, 187, 187);
+  background-color: rgb(58, 58, 58);
   margin: 0;
   padding: 0;
 }
@@ -14,14 +14,21 @@ h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
 }
 
+h1 {
+  font-size: 50px;
+  padding-top: 1rem;
+}
+
 .container {
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 1rem;
+  background-color: #c2c2c2;
 }
 
 img {
   width: 100%;
+  margin-top: 1em;
 }
 
 .main-nav ul {
@@ -29,7 +36,9 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
+  padding: 1em;
+  background-color: rgb(58, 58, 58);
+  color: #ffffff;
 }
 
 .main-nav ul li {
@@ -71,14 +80,14 @@ form button {
 }
 
 /* change colour when hovering on nav */
-.main-nav ul li a:hover { 
-  color: #ffffff;
-  background-color: black;  
+.main-nav ul li:hover { 
+  color: #000000;
+  background-color: #c2c2c2;  
 }
 
 /* adds focus border */
 a:focus{
-  outline: 4px solid rgb(255, 0, 0);
+  outline: 4px solid rgb(0, 247, 255);
 }
 
 /* styling skip links */
@@ -91,12 +100,19 @@ a:focus{
 .skip-links a{
   position: absolute;
   top: -3em;
-  background-color: black;
+  background-color: rgb(58, 58, 58);
   color:white;
   padding: .5em 1em;
-  font-weight: bold;
 }
 
 .skip-links a:focus{
   top: 0;
+}
+
+.contact-section {
+  padding-right: 2.5em;
+}
+
+.sitefooter {
+  padding: 1em;
 }
